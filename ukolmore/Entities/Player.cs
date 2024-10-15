@@ -26,7 +26,7 @@ namespace ukolmore.Entities
 
         public void Attack(Enemy enemy)
         {
-            double dmg = BaseDmg + (CurrentWeapon.DmgOfWeapon);
+            double dmg = BaseDmg + CurrentWeapon.DmgOfWeapon;
             enemy.Health -= dmg;
             Console.WriteLine($"{Name} zautocil {enemy.Name} a udelil {dmg} dmg");
             

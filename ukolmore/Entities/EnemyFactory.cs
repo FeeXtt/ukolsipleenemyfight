@@ -18,5 +18,10 @@ namespace ukolmore.Entities
             return new Enemy("Goblin", 7, 20);
         }
 
+        public static Boss CreateBoss()
+        {
+            return new Boss("Final Boss", 10, 100);
+        }
+
     }
 }

@@ -14,7 +14,7 @@ namespace ukolmore.Entities
         {
             SecondPhase = true;
         }
-        public override void Attack(Player player)
+        public void Attack(Player player)
         {
             if (Health < 0 && !SecondPhase)
             {

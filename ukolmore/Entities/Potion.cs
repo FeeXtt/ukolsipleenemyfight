@@ -4,8 +4,8 @@ namespace ukolmore.Entities
 {
     public enum PotionType
     {
-        Healing,
-        StrengthBoost
+        Medkit,
+        Strengthka,
     }
 
     public class Potion
@@ -25,11 +25,11 @@ namespace ukolmore.Entities
         {
             switch (Type)
             {
-                case PotionType.Healing:
+                case PotionType.Medkit:
                     player.Health += EffectValue;
                     Console.WriteLine($"{player.Name} dohealoval {EffectValue} Hp.");
                     break;
-                case PotionType.StrengthBoost:
+                case PotionType.Strengthka:
                     player.BaseDmg += EffectValue;
                     Console.WriteLine($"{player.Name} dostal {EffectValue} Dmg navic.");
                     break;
